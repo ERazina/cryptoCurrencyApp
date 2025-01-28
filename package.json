@@ -3,15 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://elinarazina.github.io/cryptoCurrencyApp",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@types/node": "^22.10.7",
     "antd": "^5.23.2",
+    "gh-pages": "^6.3.0",
     "mobx": "^6.13.5",
     "mobx-react-lite": "^4.1.0",
     "react": "^18.3.1",
