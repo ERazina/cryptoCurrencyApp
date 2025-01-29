@@ -7,6 +7,9 @@ const __dirname = path.dirname(new URL(import.meta.url).pathname);
 export default defineConfig({
   plugins: [react()],
   base: "/cryptoCurrencyApp/",
+  build: {
+    outDir: "dist",
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
